@@ -1,0 +1,39 @@
+{
+  "name": "quick-express",
+  "version": "1.0.0",
+  "description": "Quick Ready made CMS in express js",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js",
+    "tailwind:css": "postcss src/resources/assets/system/css/style.css -o src/public/system/css/style.css",
+    "build": "webpack"
+  },
+  "author": "Aashish Thapa Magar",
+  "license": "ISC",
+  "dependencies": {
+    "@alpinejs/persist": "^3.13.0",
+    "alpinejs": "^3.13.0",
+    "apexcharts": "^3.42.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "autoprefixer": "^10.4.15",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-prismjs": "^2.1.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "postcss-loader": "^7.3.3",
+    "sequelize-cli": "^6.6.1",
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
