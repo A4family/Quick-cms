@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/server.js",
     "tailwind:css": "postcss src/resources/assets/system/css/style.css -o src/public/system/css/style.css",
-    "build": "webpack"
+    "build": "webpack",
+    "prepare": "husky install",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src"
   },
   "author": "Aashish Thapa Magar",
   "license": "ISC",
@@ -31,6 +34,7 @@
     "eslint-plugin-n": "^16.3.1",
     "eslint-plugin-promise": "^6.1.1",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
     "mini-css-extract-plugin": "^2.7.6",
     "nodemon": "^3.0.1",
     "postcss": "^8.4.29",

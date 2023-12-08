@@ -1,7 +1,7 @@
 class DashboardService {
-    async index () {
-        return 'ok';
-    }
+  async index () {
+    return 'ok';
+  }
 }
 
 module.exports = DashboardService;
