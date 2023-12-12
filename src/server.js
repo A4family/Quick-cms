@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
-const PORT = 8000;
+const process = require('process');
+const PORT = process.env.PORT || 8000;
 const loaders = require('./bootstrap');
+
 const startServer = () => {
   loaders.init(app);
   app.listen(PORT, err => {

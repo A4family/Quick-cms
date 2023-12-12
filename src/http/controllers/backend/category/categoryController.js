@@ -11,8 +11,8 @@ class CategoryController {
 
   async create (req, res) {
     res.render('layouts/master', {
-        innerPage: '../pages/category/form'
-    })
+      innerPage: '../pages/category/form'
+    });
   }
 
   async edit (req, res) {
