@@ -1,5 +1,8 @@
-class CategoryController {
+const { Category } = require('../../../../db/models');
+const BaseController = require('../baseController');
+class CategoryController extends BaseController {
   constructor (opts) {
+    super(opts);
     this.service = opts.categoryService;
   }
 
@@ -17,6 +20,14 @@ class CategoryController {
 
   async edit (req, res) {
     res.send(req.params.id);
+  }
+
+  async store (req, res) {
+     try {
+        res.send('nice boy');
+     } catch (err) {
+      res.send(err);
+     }
   }
 }
 
